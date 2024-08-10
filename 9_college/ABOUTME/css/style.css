@@ -1,0 +1,311 @@
+
+.bg-cover {
+    background-size: cover !important;
+}
+
+
+body {
+    min-height: 100vh;
+}
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+.div2{
+width: 80%;
+margin: auto;
+}
+
+.trans_card{
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #2c8101;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #266d02;
+}
+.twitter-bg{
+  background: #2c8101;
+}
+.google-bg{
+  background: #2c8101;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #2c8101;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #2c8101;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #2c8101;
+    padding: 13px 20px;
+    border: 1px solid #109f00;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #109f00;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #109f00;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+
+.animat_load{
+   width: 80%;
+   margin: auto;
+}
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+.content {
+  text-align: center;
+}
+.content h1 {
+  font-family: 'Sansita', sans-serif;
+  letter-spacing: 1px;
+  font-size: 50px;
+  color: #282828;
+  margin-bottom: 10px;
+}
+.content  i {
+  color: #31ba0f;
+}
+.content span {
+  position: relative;
+  display: inline-block;
+}
+.content  span:before, .content  span:after {
+  position: absolute;
+  content: "";
+  background-color: #282828;
+  width: 40px;
+  height: 2px;
+  top: 40%;
+}
+.content  span:before {
+  left: -45px;
+}
+.content  span:after {
+  right: -45px;
+} 
+.content p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+/*============================================================================*/
+/*============================================================================*/
+/*============================================================================*/
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+/*hides the radio buttons*/
+.rating > input{ display:none;}
+
+/*style the empty stars, sets position:relative as base for pseudo-elements*/
+.rating > label {
+  position: relative;
+  width: 1.1em;
+  font-size: 15vw;
+  color: #5bb00c;
+  cursor: pointer;
+}
+
+/* sets filled star pseudo-elements */
+.rating > label::before{ 
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+}
+/*overlays a filled start character to the hovered element and all previous siblings*/
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+/*overlays a filled start character on the selected element and all previous siblings*/
+.rating > input:checked ~ label:before{
+  opacity:1;
+}
+
+/*when an element is selected and pointer re-enters the rating container, selected rate and siblings get semi transparent, as reminder of current selection*/
+.rating:hover > input:checked ~ label:before{ opacity: 0.4; }
+
+/*just aesthetics*/
+body{ background: #222225; color: white;}
+h1, p{ text-align: center;}
+p{ font-size: 1.2rem;}
+@media only screen and (max-width: 600px) {
+  h1{font-size: 14px;}
+  p{font-size: 12px;}
+}
+
+
+

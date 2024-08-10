@@ -1,0 +1,1737 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+
+    height: 6900px;
+}
+/* --------------------------------------------------------------------------------- */
+/* جمله بها تغير الالوان */
+/* .h11{
+    color: rgb(244, 245, 245);
+    background-color: black;
+    display: inline-block;
+    width: 280px;
+    height: 50px;
+    border:  rgb(255, 255, 255) ;
+    transform: translate(800px,0);
+    box-shadow: 4px 2px 4px 2px rgb(251, 251, 251);
+    transition: inherit;
+    animation-name:change_color2 ;
+    animation-duration: 5s;
+
+}
+@keyframes change_color2{
+    0%{
+        background-color: rgb(0, 0, 0);
+    }
+20%{
+        background-color: rgb(255, 255, 255);
+    }
+   20% {
+        background-color: rgb(0, 0, 0);
+    }
+   20% {
+        background-color:rgb(255, 255, 255);
+    }
+    20%{
+        background-color: rgb(255, 255, 255);
+    }
+    20% {
+        background-color: rgb(0, 0, 0);
+    }
+   20% {
+        background-color:rgb(255, 255, 255);
+    }
+    10%{
+        background-color: rgb(0, 0, 0);
+    }
+    10% {
+        background-color: rgb(255, 255, 255);
+    }
+   10% {
+        background-color:rgb(0, 0, 0);
+    }
+    10%{
+        background-color: rgb(255, 255, 255);
+    }
+    20% {
+        background-color:rgb(0, 0, 0);
+    }
+    10%{
+        background-color:rgb(248, 247, 245);
+    }
+    10% {
+        background-color:rgb(255, 255, 255);
+    }
+   20% {
+        background-color:rgb(255, 255, 255);
+    }
+    10%{
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+@media screen and (max-width:768px){
+    .h11{
+        font-size: medium;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        display: ;
+        width: fit-content;;
+        border-radius: 5%;
+        transform: translate(300px,0);
+        width: 135px;
+        height: 25px;
+        border:  aqua;
+        box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+    }
+    @keyframes change_color2{
+        0%{
+            background-color: rgb(0, 0, 0);
+        }
+    20%{
+            background-color: rgb(255, 255, 255);
+        }
+       20% {
+            background-color: rgb(0, 0, 0);
+        }
+       20% {
+            background-color:rgb(255, 255, 255);
+        }
+        20%{
+            background-color: rgb(255, 255, 255);
+        }
+        20% {
+            background-color: rgb(0, 0, 0);
+        }
+       20% {
+            background-color:rgb(255, 255, 255);
+        }
+        10%{
+            background-color: rgb(0, 0, 0);
+        }
+        10% {
+            background-color: rgb(255, 255, 255);
+        }
+       10% {
+            background-color:rgb(0, 0, 0);
+        }
+        10%{
+            background-color: rgb(255, 255, 255);
+        }
+        20% {
+            background-color:rgb(0, 0, 0);
+        }
+        10%{
+            background-color:rgb(248, 247, 245);
+        }
+        10% {
+            background-color:rgb(255, 255, 255);
+        }
+       20% {
+            background-color:rgb(255, 255, 255);
+        }
+        10%{
+            background-color: rgb(0, 0, 0);
+        }
+    }
+    
+} */
+
+/* ------------------------------------------------------------------------------- */
+
+.div2{
+    height: 50px; 
+    width: 1920px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0PX auto;
+    position: sticky;
+    top: 5px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+}
+   
+/* -------------------------------------- */
+.bu1{
+    background-color: rgb(7, 6, 6);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    font: bold;
+    font-size: x-large;
+    border: black;
+    
+}
+.bu1:hover{
+    background-color: white;
+    color: black;
+    }
+.bu1:focus{
+    color: black;
+    background-color: azure;
+    background-color: azure;}
+/* -------------------------------------- */
+.bu2
+{
+    background-color: rgb(7, 6, 6);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    font: bold;
+    font-size: x-large;
+    border: black;
+
+}
+.bu2:hover{
+    background-color: white;
+    color: black;
+    }
+    .bu2:focus{
+    color: black;
+    background-color: azure;
+    background-color: azure;}
+/* -------------------------------------- */
+
+.bu3
+{
+    background-color: rgb(7, 6, 6);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    font: bold;
+    font-size: x-large;
+    border: black;
+
+}
+.bu3:hover{
+    background-color: white;
+    color: black;
+    }
+    .bu3:focus{
+    color: black;
+    background-color: azure;
+    background-color: azure;}
+/* -------------------------------------- */
+.bu4
+{
+    background-color: rgb(7, 6, 6);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    font: bold;
+    font-size: x-large;
+    border: black;
+
+}
+.bu4:hover{
+    background-color: white;
+    color: black;
+    }
+    .bu4:focus{
+    color: black;
+    background-color: azure;
+    background-color: azure;}
+/* -------------------------------------- */
+
+.bu5
+{
+    background-color: rgb(7, 6, 6);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    font: bold;
+    font-size: x-large;
+    border: black;
+
+}
+.bu5:hover{
+    background-color: white;
+    color: black;
+    }
+    .bu5:focus{
+    color: black;
+    background-color: azure;
+    background-color: azure;}
+/* -------------------------------------- */
+   
+.bu6
+{
+    background-color: rgb(7, 6, 6);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    font: bold;
+    font-size: x-large;
+    border: black;
+
+}
+.bu6:hover{
+    background-color: white;
+    color: black;
+    }
+    .bu6:focus{
+    color: black;
+    background-color: azure;
+    background-color: azure;}
+/* -------------------------------------- */
+
+.bu7
+{
+    background-color: rgb(7, 6, 6);
+    color: rgb(255, 255, 255);
+    width: 200px;
+    font: bold;
+    font-size: x-large;
+    border: black;
+
+}
+.bu7:hover{
+    background-color: white;
+    color: black;
+    }
+    .bu7:focus{
+    color: black;
+    background-color: azure;
+    background-color: azure;}
+
+
+/* ================================================================================ */
+/* ================================================================================ */
+/* ================================================================================ */
+/* ================================================================================ */
+.devp2{
+
+    transform: skewx(10deg);
+    line-height: 80px;
+}
+.devp{
+    color: rgb(0, 0, 0);
+    text-size-adjust:unset;   
+     margin: 150px;
+     justify-content:space-between;
+     transform: translate(40px,-40px);
+     display: inline-block;
+
+    
+        padding: 90px;
+        width: 1500px;
+    
+}
+.h21 {
+        font:bolder;
+         margin: 10px ; 
+        /* text-decoration: underline;    */
+        font-size:200%;
+        display: flex;
+        justify-content:left;
+           
+}
+.img1{
+    cursor: pointer;
+    transition: transform 2s ease-in-out;
+    margin:-500px 900px auto ;
+}
+
+.img1:hover{
+    transform: translate3d(-50px,50px,-50px);
+}
+
+.img1{
+    width: 500px;
+    height: 500px;
+border-radius:30%;
+box-shadow:  2px 5px 5px 5px rgb(255, 255, 255);
+}
+
+
+
+.child{
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    }
+    .child div{
+        background-color: black;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin: 0 10px;
+        box-shadow: 2px 2px 2px 2px rgb(1, 0, 0);
+        animation-name: up-and-down ;
+        animation-duration: 0.4s;
+        animation-iteration-count:infinite;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+    }
+    .par{
+        transform: translate(-100px,70px);
+    }
+    
+    .child .two{
+        animation-delay: 0.3s;
+    }
+    .child .three{
+        animation-delay: 0.4s;
+    
+    }
+    .child .four{
+        animation-delay: 0.6s;
+    
+    }
+    .child .five{
+        animation-delay: 0.8s;
+    
+    }.child .sex{
+        animation-delay: 1s;
+    
+    }.child .seven{
+        animation-delay: 1.2s;
+    
+    }.child .eaigh{ 
+        animation-delay: 1.4s;
+    
+    }.child .nine{
+        animation-delay: 1.6s;
+    
+    }.child .ten{
+        animation-delay: 1.8s;
+    
+    }
+    @keyframes up-and-down {
+         100% {
+            opacity: 0.2s;
+            transform: translateY(-20px);
+           }
+    }
+    
+
+.hr2{
+        color: black;
+        transform: translate(-250px,-130px);
+        width: 1820px;
+        border: double rgb(10, 9, 9);
+        box-shadow: 5px 2px 5px 2px rgb(8, 8, 8);
+    
+}
+
+.icon img{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    margin: 55px ;
+    transform: translate(-80px,-200px);
+}
+
+
+/* ================================================================================= */
+/* ================================================================================= */
+/* ================================================================================= */
+
+.languages_c .imgg1{
+    display: flex;
+    justify-content: center space-around;
+        width: 40px;
+        height:40px ;
+        margin: 10px auto;
+        transform: translate(-230px,-100px);
+    }
+    
+    
+    .languages_c .imgg2{
+        display: flex;
+        justify-content: center space-around;
+            width: 40px;
+            height:40px ;
+            margin: 10px auto;
+            transform: translate(50px,-150px);
+    }
+    
+    
+    .languages_c .h1{
+        transform: translate(550px,-210px);
+    }
+
+/* ================================================================================= */
+
+.cpp img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(160px,-100PX);
+}
+.cpp h2{
+    transform: translate(00px,-20PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+
+.c img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(160px,-180PX);
+}
+.c h2{
+    transform: translate(00px,-100PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+
+
+.csh img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(160px,-260PX);
+}
+.csh h2{
+    transform: translate(00px,-180PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+
+.bash img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(160px,-340PX);
+}
+.bash h2{
+    transform: translate(00px,-260PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+/* <!-- ========================================================================================== --> */
+.languages_block1{
+
+    background-color: none;
+    border: black double 3px;
+    width: 300px;
+    height: 350px;
+    transform: translate(160px,-50px);
+    box-shadow: 2px  2px 25px gray;
+}
+
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+
+.py img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(160px,-100PX);
+}
+.py h2{
+    transform: translate(00px,-20PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+
+.html img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(160px,-180PX);
+}
+.html h2{
+    transform: translate(00px,-100PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+
+
+.css img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(160px,-260PX);
+}
+.css h2{
+    transform: translate(00px,-180PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+
+.js img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(160px,-340PX);
+}
+.js h2{
+    transform: translate(00px,-260PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+/* <!-- ========================================================================================== --> */
+.languages_block2{
+
+    background-color: none;
+    border: black double 3px;
+    width: 300px;
+    height: 350px;
+    transform: translate(880px,-400px);
+    box-shadow: 2px  2px 25px gray;
+}
+/* <!-- ========================================================================================== --> */
+.conected1_2{
+    width: 410px;
+    height: 2px;
+    transform: translate(464px,-580PX);
+    box-shadow: 2px 2px 20px  rgb(99, 99, 99);
+    border: dashed black;
+}
+
+
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+
+.sql img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(160px,-100PX);
+}
+.sql h2{
+    transform: translate(00px,-20PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+
+.dotnet img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(160px,-180PX);
+}
+.dotnet h2{
+    transform: translate(00px,-100PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+
+
+.php img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(160px,-260PX);
+}
+.php h2{
+    transform: translate(00px,-180PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+
+.mvc img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(160px,-340PX);
+}
+.mvc h2{
+    transform: translate(00px,-260PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+/* <!-- ========================================================================================== --> */
+.languages_block3{
+
+    background-color: none;
+    /* border: black double 3px; */
+    width: 300px;
+    height: 350px;
+    transform: translate(1000px,-200px);
+    box-shadow: 2px  2px 25px rgb(163, 162, 162);
+    border: 2px solid ;
+    border-color: linear-gradient(to right,#0000ff, #ff0000, #00ff00 );
+    animation-name: my-animation;
+    animation-iteration-count:  infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}  
+      
+@keyframes my-animation {
+        0% {
+          border-color: #ff0000;
+        }
+        50% {
+          border-color: #00ff00;
+        }
+        100% {
+          border-color: #0000ff;
+        }
+      }
+
+
+
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+
+.bootstrab img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(175px,-95PX);
+}
+.bootstrab h2{
+    transform: translate(-15px,-20PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+
+.react img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(175px,-175PX);
+}
+.react h2{
+    transform: translate(-15px,-100PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+
+
+.angular img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(175px,-255PX);
+}
+.angular h2{
+    transform: translate(-15px,-180PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+
+.vue img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(175px,-340PX);
+}
+.vue h2{
+    transform: translate(-15px,-260PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+/* <!-- ========================================================================================== --> */
+.languages_block4{
+
+    background-color: none;
+    border: black double 3px;
+    width: 300px;
+    height: 350px;
+    transform: translate(500px,-552px);
+    box-shadow: 2px  2px 25px rgb(163, 162, 162);
+    border-color: linear-gradient(to right,#0000ff, #fffc3a, #00ff00 );
+    animation-name: my-animation;
+    animation-iteration-count:  infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}  
+      
+@keyframes my-animation {
+        0% {
+          border-color: #d1ff19;
+        }
+        50% {
+          border-color: #00ff00;
+        }
+        100% {
+          border-color: #0000ff;
+        }
+      }
+
+
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+
+.django img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(182px,-95PX);
+}
+.django h2{
+    transform: translate(-22px,-20PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+
+.larvel img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(182px,-175PX);
+}
+.larvel h2{
+    transform: translate(-22px,-100PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+
+
+.media img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(182px,-255PX);
+}
+.media h2{
+    transform: translate(-22px,-180PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+
+.jquery img{
+
+    display: inline;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+    transform: translate(182px,-335PX);
+}
+.jquery h2{
+    transform: translate(-22px,-260PX);
+    font:italic;
+    text-shadow: 2px 2px 2px 2px white;
+    margin: 50PX;
+}
+
+/* <!-- ========================================================================================== --> */
+.languages_block5{
+
+    background-color: none;
+    /* border: black double 3px; */
+    width: 300px;
+    height: 350px;
+    transform: translate(0px,-903px);
+    box-shadow: 2px  2px 25px rgb(163, 162, 162);
+
+    border: 2px solid ;
+    border-color: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+    animation-name: my-animation;
+    animation-iteration-count:  infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}  
+      
+@keyframes my-animation {
+        0% {
+          border-color: #ff0000;
+        }
+        50% {
+          border-color: #00ff00;
+        }
+        100% {
+          border-color: #0000ff;
+        }
+      }
+
+/* <!-- ========================================================================================== --> */
+.conected3_4{
+    transform: translate(805px,-1100px);
+    width: 192px;
+    box-shadow: 2px 2px 20px  rgb(99, 99, 99);
+    border: dashed black 2px;
+
+}
+.conected4_5{
+    transform: translate(305px,-1100px);
+    width: 192px;
+    box-shadow: 2px 2px 20px  rgb(99, 99, 99);
+    border: dashed black 2px;
+
+}
+
+
+.conected1_5{
+    transform: translate(-420px,-1650px);
+    width: 265px;
+    box-shadow: 1px 2px 20px  rgb(99, 99, 99);
+    border: dashed black 2px;
+    display: flex;
+    rotate: 50deg ;
+
+}
+.conected1_4{
+    transform: translate(1110px,-830px);
+    width: 280px;
+    box-shadow: 1px 2px 20px  rgb(99, 99, 99);
+    border: dashed black 2px;
+    display: flex;
+    rotate: -50deg ;
+
+}
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+
+
+.child2{
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    }
+    .child2 div{
+        background-color: black;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin: 0 10px;
+        box-shadow: 2px 2px 2px 2px rgb(1, 0, 0);
+        animation-name: up-and-down_t ;
+        animation-duration: 0.4s;
+        animation-iteration-count:infinite;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+    }
+    .par2{
+        transform: translate(-20px,-1200px);
+    }
+    
+    .child2 .two{
+        animation-delay: 0.3s;
+    }
+    .child2 .three{
+        animation-delay: 0.4s;
+    
+    }
+    .child2 .four{
+        animation-delay: 0.6s;
+    
+    }
+    .child2 .five{
+        animation-delay: 0.8s;
+    
+    }.child2 .sex{
+        animation-delay: 1s;
+    
+    }.child2 .seven{
+        animation-delay: 1.2s;
+    
+    }.child2 .eaigh{ 
+        animation-delay: 1.4s;
+    
+    }.child2 .nine{
+        animation-delay: 1.6s;
+    
+    }.child2 .ten{
+        animation-delay: 1.8s;
+    
+    }
+    @keyframes up-and-down_t {
+         100% {
+            opacity: 0.2s;
+            transform: translateY(-20px);
+           }
+    }
+    
+
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+
+.header_soft .imgg1{
+   width: 40px;
+   height: 40px;
+   transform: translate(770px,-1200px);
+
+}
+.header_soft .imgg2{
+    width: 40px;
+    height: 40px;
+    transform: translate(1020px,-1200px);
+ }
+ .header_soft h1{
+      transform: translate(830px,-1250px);
+ }
+
+ /* ------------------------------------- */
+
+
+.soft1 .imgg3{
+    width: 40px;
+    height: 40px;
+    transform: translate(860px,-790px);
+
+}
+.soft1 .imgg4{
+    width: 40px;
+    height: 40px;
+    transform: translate(905px,-1250px);
+
+}
+.soft1 hr{
+    width: 400px;
+    border:  solid black 4px;
+    rotate:90deg;
+    transform: translate(-1050px,-720px);
+
+}
+/* ------------------------------------- */
+
+.tleader h2{
+    transform: translate(980px,-1260px);
+
+}
+.tleader img{
+    transform: translate(950px,-1290px);
+    width: 30px;
+    height: 30px;
+}
+/* ------------------------------------- */
+
+.list h2{
+    transform: translate(980px,-1240px);
+
+}
+.list img{
+    transform: translate(950px,-1270px);
+    width: 30px;
+    height: 30px;
+}
+ /* ------------------------------------- */
+
+.crea h2{
+    transform: translate(980px,-1220px);
+
+}
+.crea img{
+    transform: translate(950px,-1250px);
+    width: 30px;
+    height: 30px;
+}
+/* ------------------------------------- */
+
+.think h2{
+    transform: translate(980px,-1200px);
+
+}
+.think img{
+    transform: translate(950px,-1230px);
+    width: 30px;
+    height: 30px;
+}
+/* ------------------------------------- */
+
+.timng h2{
+    transform: translate(980px,-1180px);
+
+}
+.timng img{
+    transform: translate(950px,-1210px);
+    width: 30px;
+    height: 30px;
+}
+
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+.soft2 .imggg1{
+    width: 40px;
+    height: 40px;
+    transform: translate(905px,-720px);
+
+}
+.soft2 hr{
+    width: 400px;
+    border:  solid black 4px;
+    rotate:90deg;
+    transform: translate(-980px,-720px);
+}
+/* ------------------------------------- */
+.leader h2{
+    transform: translate(770px,-1190px);
+
+}
+.leader img{
+    transform: translate(740px,-1220px);
+    width: 30px;
+    height: 30px;
+}
+/* ------------------------------------- */
+.entre_sh h2{
+    transform: translate(680px,-1170px);
+
+}
+.entre_sh img{
+    transform: translate(650px,-1200px);
+    width: 30px;
+    height: 30px;
+}
+/* ------------------------------------- */
+.comu h2{
+    transform: translate(710px,-1150px);
+
+}
+.comu img{
+    transform: translate(680px,-1180px);
+    width: 30px;
+    height: 30px;
+}
+/* ------------------------------------- */
+.proplems h2{
+    transform: translate(710px,-1130px);
+
+}
+.proplems img{
+    transform: translate(680px,-1160px);
+    width: 30px;
+    height: 30px;
+}
+/* ------------------------------------- */
+.helper h2{
+    transform: translate(820px,-1110px);
+
+}
+.helper img{
+    transform: translate(790px,-1140px);
+    width: 30px;
+    height: 30px;
+}
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+.soft3 .imgggg1{
+    width: 40px;
+    height: 40px;
+    transform: translate(905px,-650px);
+
+}
+.soft3 hr{
+    width: 400px;
+    border:  solid black 4px;
+    rotate:90deg;
+    transform: translate(-860px,-720px);
+}
+/* ------------------------------------- */
+
+.boxing h2{
+    transform: translate(980px,-1120px);
+
+}
+.boxing img{
+    transform: translate(950px,-1150px);
+    width: 30px;
+    height: 30px;
+}
+/* ------------------------------------- */
+
+.scout h2{
+    transform: translate(980px,-1100px);
+
+}
+.scout img{
+    transform: translate(950px,-1130px);
+    width: 30px;
+    height: 30px;
+}
+ /* ------------------------------------- */
+
+.kongfu h2{
+    transform: translate(980px,-1080px);
+
+}
+.kongfu img{
+    transform: translate(950px,-1110px);
+    width: 30px;
+    height: 30px;
+}
+/* ------------------------------------- */
+
+.Electronic h2{
+    transform: translate(980px,-1060px);
+
+}
+.Electronic img{
+    transform: translate(950px,-1090px);
+    width: 30px;
+    height: 30px;
+}
+/* ------------------------------------- */
+
+.Organization h2{
+    transform: translate(980px,-1040px);
+
+}
+.Organization img{
+    transform: translate(950px,-1070px);
+    width: 30px;
+    height: 30px;
+}
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+.soft4 .imgggg1{
+    width: 40px;
+    height: 40px;
+    transform: translate(720px,-610px);
+
+}
+.soft4 .imgggg2{
+    width: 40px;
+    height: 40px;
+    transform: translate(1040px,-610px);
+
+}
+.soft4 .hr1{
+    width: 400px;
+    border:  solid black 4px;
+    rotate:90deg;
+    transform: translate(-790px,-720px);
+}
+.soft4 .hrr2{
+    width: 300px;
+    border:  solid rgb(0, 0, 0) 4px;
+    /* rotate:90deg; */
+    transform: translate(770px,-590px);
+}
+/* ------------------------------------- */
+.Effective h2{
+    transform: translate(795px,-1050px);
+
+}
+.Effective img{
+    transform: translate(760px,-1080px);
+    width: 30px;
+    height: 30px;
+}
+/* ------------------------------------- */
+.openness h2{
+    transform: translate(730px,-1030px);
+
+}
+.openness img{
+    transform: translate(700px,-1060px);
+    width: 30px;
+    height: 30px;
+}
+/* ------------------------------------- */
+.Adaptability h2{
+    transform: translate(690px,-1010px);
+
+}
+.Adaptability img{
+    transform: translate(660px,-1040px);
+    width: 30px;
+    height: 30px;
+}
+/* ------------------------------------- */
+.Decision h2{
+    transform: translate(700px,-990px);
+
+}
+.Decision img{
+    transform: translate(670px,-1020px);
+    width: 30px;
+    height: 30px;
+}
+/* ------------------------------------- */
+.Goal h2{
+    transform: translate(760px,-970px);
+
+}
+.Goal img{
+
+    transform: translate(730px,-1000px);
+    width: 30px;
+    height: 30px;
+}
+/* ------------------------------------- */
+/* ------------------------------------- */
+.softp{
+    transform: translate(550px,-1200px);
+    width: 700px;
+    height: 2000px;
+    border: solid black 2px;
+    border: 2px solid ;
+    border-color: linear-gradient(to right, aqua,green,blue,yellow);
+    animation-name: my-animation;
+    animation-iteration-count:  infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    box-shadow: 2px 2px 55px black;
+
+}  
+      
+@keyframes my-animation {
+        10% {
+          border-color: aqua;
+        }
+        40% {
+          border-color:green;
+        }
+        70%{
+          border-color: yellow
+        }
+        100% {
+          border-color: blue;
+        }
+      }
+
+.softc{
+    transform: translate(-550px,1250px);
+
+}
+
+
+.pr{
+
+    transform: translate(850px,350px);
+ 
+ 
+ }
+ /* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+
+ .cyrcleprc{
+     border-radius: 50%;
+     border: solid 5px black;
+     transition:transform 400s ;
+     animation-iteration-count: infinite;
+     border-left-color: transparent;
+     background-color: white;
+     width: 100px;
+     height: 100px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .cyrcleprc:hover{
+     transform: rotate(2000turn);
+ 
+ }
+ .cyrclep{
+    transform: translate(850px,-1100px);
+ }
+
+ /* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+
+.parent2{
+    background-color: black;
+    width: 1850px;
+    height: 500px;
+    transform: translate(30px,-950px);
+    border: solid double white 3px inset;
+    box-shadow: 2px 2px 55px black;
+
+    border: 3px solid ;
+    border-color: linear-gradient(to right, aqua,green,blue,yellow);
+    animation-name: my-animation;
+    animation-iteration-count:  infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    box-shadow: 2px 2px 55px black;
+
+}  
+      
+@keyframes my-animation {
+        10% {
+          border-color: aqua;
+        }
+        40% {
+          border-color:green;
+        }
+        70%{
+          border-color: yellow
+        }
+        100% {
+          border-color: blue;
+        }
+      }
+
+      /* <!-- ========================================================================================== --> */
+.blocknum1c{
+color: aliceblue;
+}
+.blocknum1c h2{
+    transform: translate(220px,160px);
+    font-style: oblique;
+}
+.blocknum1c  svg{ 
+    transform: translate(250px,150px);
+    width: 150px;
+    height: 150px;
+
+}
+.blocknum1c .h1bc2{
+    transform: translate(780px,-150px);
+        
+        }
+/* <!-- ========================================================================================== --> */
+.blocknum2c{
+    color: aliceblue;
+    }
+    .blocknum2c h2{
+        transform: translate(620px,-70px);
+        font:bold
+    }
+    .blocknum2c  svg{ 
+        transform: translate(650px,-80px);
+        width: 150px;
+        height: 150px;
+    
+    }
+/* <!-- ========================================================================================== --> */
+.blocknum3c{
+    color: aliceblue;
+    }
+    .blocknum3c h2{
+        transform: translate(1020px,-260px);
+        font:bold
+    }
+    .blocknum3c  svg{ 
+        transform: translate(1030px,-270px);
+        width: 150px;
+        height: 150px;
+    
+    }
+
+/* <!-- ========================================================================================== --> */
+.blocknum4c{
+    color: aliceblue;
+    }
+    .blocknum4c h2{
+        transform: translate(1410px,-440px);
+        font:bold
+    }
+    .blocknum4c  svg{ 
+        transform: translate(1420px,-460px);
+        width: 150px;
+        height: 150px;
+    }
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+.hrbigp .hrbig{
+    width: 1235px;
+    height: 100px;
+    rotate: 90deg;
+    background-color: rgb(255, 255, 255);
+    transform: translate(-383px,-333px);
+    /* border: cornsilk double 3px; */
+    box-shadow: 2px 2px 50px  rgb(63, 100, 77) inset;
+}
+/* <!-- ========================================================================================== --> */
+.hrs hr{
+    background-color: none;
+    width: 300px;
+    height: 15px;
+    border: none;
+    border-radius: 50% 2%;
+    border: 3px solid ;
+    border-color: linear-gradient(to right, aqua,green,blue,yellow);
+    animation-name: my-animation;
+    animation-iteration-count:  infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+
+}  
+      
+@keyframes my-animation {
+        10% {
+          border-color: aqua;
+        }
+        40% {
+          border-color:green;
+        }
+        70%{
+          border-color: yellow
+        }
+        100% {
+          border-color: blue;
+        }
+      }
+
+/* <!-- ========================================================================================== --> */
+.hr_block1 .hrnum1{
+    transform: translate(595px,-900px);
+}
+
+.hr_block1 .hrnum2{
+    transform: translate(595px,-800px);
+}
+
+.hr_block1 .hrnum3{
+    transform: translate(595px,-700px);
+}
+
+.hr_block1 .hrnum4{
+    transform: translate(595px,-600px);
+}
+
+.hr_block1 .hrnum5{
+    transform: translate(595px,-500px);
+}
+
+.hr_block1 .hrnum6{
+    transform: translate(595px,-400px);
+}
+
+.hr_block1 .hrnum7{
+    transform: translate(595px,-300px);
+}
+
+.hr_block1 .hrnum8{
+    transform: translate(595px,-200px);
+}
+.hr_block1 .hrnum9{
+    transform: translate(595px,-100px);
+}
+/* <!-- ========================================================================================== --> */
+.hr_block2 .hrnum1{
+    transform: translate(1000px,-995px);
+}
+
+.hr_block2 .hrnum2{
+    transform: translate(1000px,-895px);
+}
+
+.hr_block2 .hrnum3{
+    transform: translate(1000px,-795px);
+}
+
+.hr_block2 .hrnum4{
+    transform: translate(1000px,-695px);
+}
+
+.hr_block2 .hrnum5{
+    transform: translate(1000px,-595px);
+}
+
+.hr_block2 .hrnum6{
+    transform: translate(1000px,-495px);
+}
+
+.hr_block2 .hrnum7{
+    transform: translate(1000px,-395px);
+}
+
+.hr_block2 .hrnum8{
+    transform: translate(1000px,-295px);
+}
+.hr_block2 .hrnum9{
+    transform: translate(1000px,-195px);
+}
+
+/* <!-- ========================================================================================== --> */
+.h2_block1 .h2num1{
+    transform: translate(620px,-1305px);
+}
+
+.h2_block1 .h2num2{
+    transform: translate(620px,-1220px);
+}
+
+.h2_block1 .h2num3{
+    transform: translate(620px,-1135px);
+}
+
+.h2_block1 .h2num4{
+    transform: translate(620px,-1050px);
+}
+
+.h2_block1 .h2num5{
+    transform: translate(620px,-965px);
+}
+
+.h2_block1 .h2num6{
+    transform: translate(620px,-875px);
+}
+
+.h2_block1 .h2num7{
+    transform: translate(620px,-785px);
+}
+
+.h2_block1 .h2num8{
+    transform: translate(620px,-700px);
+}
+.h2_block1 .h2num9{
+    transform: translate(620px,-610px);
+}
+/* <!-- ========================================================================================== --> */
+.h2_block2 .h2num1{
+    transform: translate(1010px,-1520px);
+}
+
+.h2_block2 .h2num2{
+    transform: translate(1010px,-1435px);
+}
+
+.h2_block2 .h2num3{
+    transform: translate(1010px,-1345px);
+}
+
+.h2_block2 .h2num4{
+    transform: translate(1010px,-1260px);
+}
+
+.h2_block2 .h2num5{
+    transform: translate(1010px,-1170px);
+}
+
+.h2_block2 .h2num6{
+    transform: translate(1010px,-1085px);
+}
+
+.h2_block2 .h2num7{
+    transform: translate(1010px,-995px);
+}
+
+.h2_block2 .h2num8{
+    transform: translate(1010px,-910px);
+}
+.h2_block2 .h2num9{
+    transform: translate(1010px,-825px);
+}
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+.blockss{
+    width: 90vw;
+    height: 50vh;
+    background-color: black;
+    transform: translate(5vw,-50vh);
+
+}
+
+
+
+
+
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+/* <!-- ========================================================================================== --> */
+.endpp{
+    transform: translate(1vw,-40vh);
+}
+.endp{
+    background-color: black;
+    width: 98vw;
+    height: 20vh;
+    border: solid double white 3px inset;
+    box-shadow: 2px 2px 55px black;
+
+}  
+
+#icon1{
+color: rgb(239, 239, 239);
+background-color:rgb(4, 3, 3);
+width: 30px;
+height:30px ;
+transform: translate(15vw,1vw);
+}
+.end h2{
+    color: aliceblue;
+    transform: translate(42vw,0vh);
+}
+.end svg{
+    background-color:rgb(7, 6, 6);
+    color: rgb(245, 243, 243);
+    transform: translate(35vw,10vh);
+    margin: 20px;
+}

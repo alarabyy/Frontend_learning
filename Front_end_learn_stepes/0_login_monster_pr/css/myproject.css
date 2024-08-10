@@ -1,0 +1,68 @@
+
+.bu1{
+    background-image: url("../imgs/-5206342516100679862_121.jpg");
+    background-size: cover;
+
+}
+
+  button {
+    width: 100px;
+    height: 40px;
+    background-color:aqua;
+    color: black;
+    font-weight: bold;
+    border-style:dashed;
+    border-width: 4px;
+
+
+    /* padding-right: 0cqmax;
+    margin-inline: 90%; */
+    transform: translate(900px,0);
+
+  }
+  
+  button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+
+.input{
+  padding-right: 10%;
+  transform: translate(1300px,0);
+  border-style:dashed;
+  border-width: 5px;
+  border-color: aqua ;
+  outline: invert;
+
+ }
+
+.rgb1{
+  color: aqua;
+  transform: translate(1300px,0);
+  font-style:oblique;
+  text-shadow: 0 0 8px #fff;
+
+}
+ 
+.divp{
+  color: aqua;
+}
+.img1{
+  object-position: -10px -10px;
+  text-align: center;
+  height: 500px;
+  width: 500px;
+  right:20%;
+  /* transform: translate(0,-100px);  بققد من خلال الخاصيه دي اتحكم فوق وتحت ويمين وشمال*/
+  /* transform: translate(0,100px); */
+  transform: translate(1250px,0);
+
+
+}
+.rgb1{
+  color: aqua;
+  transform: translate(1300px,0);
+  font-style:oblique;
+  text-shadow: 0 0 8px #fff;
+
+}

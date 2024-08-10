@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: serif;
+    margin:40% auto;
+    padding: 0%;
+}
+
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* start nav bar  */
+
+.imgnav {
+    width: 60px;
+    height: auto;
+    color: black;
+    
+}.imgnav:hover {
+color: aliceblue;
+}
+
+/* --------------------------------------------------------------------- */
+#navp{
+    position: sticky;
+    background-color: rgb(115, 254, 145);
+    color: black;
+    height: 70PX;
+
+}
+/* --------------------------------------------------------------------- */
+#links{
+    color: black;
+    padding: 0.1vw;
+    font-size: 20px;
+    font-family: serif;
+    margin: 3vw;
+    /* left: 100px; */
+    width: 5vw;
+
+}#links:hover,#links:focus{
+    color: rgb(255, 251, 251)
+}
+
+/* --------------------------------------------------------------------- */
+
+#iconnav {
+    color:aliceblue;
+    /* border: px white solid; */
+
+}#iconnav:hover{
+    color: rgb(0, 0, 2);
+
+}
+/* --------------------------------------------------------------------- */
+.search{
+color: rgb(14, 14, 14);
+border-left: 1px rgb(255, 255, 255) solid;
+/* transform: translate(-10vw,0vh); */
+}
+.search:hover{
+    color:rgb(255, 255, 255);
+}
+/* --------------------------------------------------------------------- */
+#login{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(115, 254, 145);
+    color: rgb(1, 0, 0);
+    margin: 10px;
+    width: 60px;
+
+}#login:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(8, 10, 12);
+}
+/* end nav bar  */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+.div2{
+    color: rgb(255, 255, 255);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin: 0vw auto;
+    background-image: url("../img/photo_2023-10-08_13-51-51.jpg");
+    background-size: cover;
+    font-size: 6vw;
+    display: block;
+    justify-content: center;
+    color: aliceblue;
+    height: auto;
+    text-align: center;
+}
+
+.div2  p{
+    transform: translate(35vw,10vh);
+
+}
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+.languagep{
+    background-color: rgb(217, 251, 211);
+
+}
+.lapellan{
+    color:rgb(5, 136, 0) ;
+
+}
+.language{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20%;
+    font-size: 3vw;
+    text-align:start;
+    color:rgb(5, 136, 0) ;
+    transition: 2s;
+}
+.language:hover{
+    letter-spacing: 6px;
+}
+.languagep button{
+width: 35vw;
+height: auto;
+font-size: xx-large;
+background: none;
+border: black 2px solid;
+border-radius: 25%;
+    transform: translate(35vw,0vw);
+
+}
+.languagep button:hover{
+    background-color: aliceblue;
+
+}
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+table{
+width: 80%;
+border: black 4px double;
+margin: 2% auto;
+padding: 20%;
+}
+tr th td tbody{
+    margin: 5%;
+    border: black 4px solid;
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+
+/* section six --> form*/
+
+.six{
+    background-color:#23363a;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+ }
+ 
+ form{
+    margin: 1vw 3vw;
+    padding:3vw 10vw; 
+ }
+ 
+ form h2{
+    color: white;
+ }
+ 
+ label{
+    color:#ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+ }
+ 
+ .label-write input{
+    width: 90%;
+    font-size: 1.4rem;
+    color:#1b2b2e;
+    border:#111b1d 3px solid;
+    background-color: #00b79cc4;
+ } 
+ 
+ .yes-no{
+    margin-top: 20px;
+ }
+ 
+ .yes-no .opt-no{
+    margin: 10px 0 20px 50px;
+ }
+ 
+ .multichoose{
+    padding:20px 0;
+ }
+ 
+
+ /* section six --> add to your information*/
+ table{
+    width: 40vw;
+ }
+ 
+ thead{
+    margin-left: 5px;
+ }
+ 
+ 

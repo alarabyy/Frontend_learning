@@ -1,0 +1,278 @@
+body{
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   color:#496C73;
+}
+::selection{
+   background-color:#025246;
+   color: rgba(255, 255, 255, 0.863);
+}
+
+a{
+   text-decoration: none;
+}
+li{
+   list-style: none;
+}
+
+
+
+
+
+/* header */
+header{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #00B79D;
+}
+
+header h1{
+   color: white;
+   font-weight: 600;
+}
+
+header h1 i{
+   margin-right: 10px;
+}
+
+header h3{
+   font-size: 16px; 
+   margin-top: -35px;
+}
+
+
+
+
+
+/* All Sections*/
+section{
+   width: 1200px;
+   height: fit-content;
+   margin: 1vw 3vw;
+   padding:3vw 10vw;
+   border-radius: 7vw;
+}
+
+
+
+
+
+/* section one */
+.one{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   scroll-behavior: smooth;
+}
+/* Section one left */
+.one .left{
+   flex-direction: column;
+   display: flex;
+   width: 50%;
+}
+
+.title-section{
+   margin-bottom: 60px;
+   font-size: 2.4rem;
+   font-weight: 600;
+}
+
+.one .left .agenda ol li{
+   font-size: 2rem;
+   font-weight: 400;
+   padding-bottom: 7px;
+}
+
+button,
+.button{
+   width: fit-content;
+   height: fit-content;
+   background-color:#496C73;
+   font-size: 1.2rem;
+   border-radius: 9999px;
+   margin: 40px 0 0 35px;
+   padding: 10px;
+}
+a{
+   color: white;
+}
+
+button:hover,
+.button:hover{
+   background-color: #00B79D;
+   border-color:#496C73;
+}
+
+/* Section one right */
+.one .right{
+   width: 50%;
+   height: 100%;
+}
+
+.one .right img{
+   width: 100%;
+   height: 100%;
+}
+
+
+
+
+/* section two */
+.two p{
+   width: 70%;
+   font-size:1rem;
+}
+.two ul{
+   padding: 10px 0;
+
+}
+
+.two li{
+   padding-bottom: 10px;
+}
+
+
+
+/* section three */
+.three dt{
+   font-size: 1.4rem;
+   font-weight: 500;
+}
+
+.three h3{
+   font-size: 1.2rem;
+}
+
+
+
+/* section three  & four & five */
+
+.three p, 
+.four b,
+.five pre {
+   padding: 10px 25px;
+   width: 60%;
+   color:#1b2b2e;
+   background-color: #00B79D;
+   border-radius: 10px;
+   font-size: 1rem;
+}
+
+.three p span, 
+.four b span,
+.five code span{
+   color: red;
+   font-weight: 600;
+   font-size: 1rem;
+}
+
+
+
+
+
+/* section four */
+.four p{
+   padding-left: 15px;
+}
+
+.four h5{
+   color: rgba(0, 0, 0, 0.281);
+}
+
+
+
+
+/* section five */
+.five span{
+   color:#1b2b2e;
+   font-weight: 400;
+}
+
+.five code h3 strong{
+   margin-left: 40px;
+}
+
+
+
+/* section six --> form*/
+
+.six{
+   background-color:#23363a;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   border-radius: 0;
+}
+
+form{
+   margin: 1vw 3vw;
+   padding:3vw 10vw; 
+}
+
+form h2{
+   color: white;
+}
+
+label{
+   color:#ffffff;
+   font-size: 1.2rem;
+   font-weight: 500;
+}
+
+.label-write input{
+   width: 60%;
+   font-size: 1.4rem;
+   color:#1b2b2e;
+   border:#111b1d 3px solid;
+   background-color: #00b79cc4;
+} 
+
+.yes-no{
+   margin-top: 20px;
+}
+
+.yes-no .opt-no{
+   margin: 10px 0 20px 50px;
+}
+
+.multichoose{
+   padding:20px 0;
+}
+
+
+
+
+/* section six --> add to your information*/
+table{
+   width: 40vw;
+}
+
+thead{
+   margin-left: 5px;
+}
+
+
+
+
+/* footer */
+footer{
+   background-color: #00B79D;
+   margin:0;
+   padding:0;
+}
+
+footer .content{
+   margin: 1vw 3vw;
+   padding:3vw 10vw; 
+}
+
+Footer h1,
+footer h3,
+footer h4{
+   color:white;
+}

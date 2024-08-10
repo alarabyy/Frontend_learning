@@ -1,0 +1,444 @@
+/* start nav bar  */
+
+
+/* start nav bar  */
+
+.imgnav{
+    width: 40px;
+    height: auto;
+    background: none;
+    border: none;
+}
+/* --------------------------------------------------------------------- */
+#navp{
+    background-color: #ffffff;
+    color: black;
+}
+/* --------------------------------------------------------------------- */
+#links{
+    color: rgb(0, 0, 0);
+    padding: 0.1vw;
+    font-size: 20px;
+    font-family: serif;
+    margin: 0.1vw;
+    width: 5vw;
+
+}#links:hover{
+    /* color: aliceblue; */
+    border-bottom: 2px solid rgb(8, 8, 8);
+}
+
+/* --------------------------------------------------------------------- */
+
+#iconnav {
+    color:rgb(4, 4, 5);
+    /* border: px white solid; */
+    transition: .5s;
+}#iconnav:hover{
+    color: rgb(21, 183, 6);
+    letter-spacing: 2px;
+
+}
+/* --------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------- */
+#login{
+    border-radius: 5px;
+    border: none;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    width: 140px;
+    height: 50px;
+    background-color: rgb(71, 193, 6);
+    transition: 1s;
+}#login:hover{
+    background-color: #fff;
+    color: rgb(3, 2, 2);
+    border-bottom: 0.5px solid rgb(0, 0, 0);
+    letter-spacing: 1px;
+
+}
+
+/* --------------------------------------------------------------------- */
+
+.div_nav{
+    width: 95%;
+    margin: 5px auto;
+}
+
+.h1nav{
+    color: black;
+    font-size:larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.divnavs{
+    display: flex;
+}
+/* end nav bar  */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* start big cards */
+
+.bidcard{
+    background-color: rgb(227, 227, 227);
+}
+.btncard{
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 5%;
+    color: black;
+    background-color: rgb(71, 193, 6);
+    transform: translate(60vw,-19vw);
+    transition: 1s;
+}
+.btncard:hover{
+background-color: #fff;
+color: rgb(3, 2, 2);
+border-bottom: 0.5px solid rgb(0, 0, 0);
+letter-spacing: 1px;
+}
+/* end big cards */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+.div_our{
+    color: black;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin:10px auto;
+}
+
+/* --------------------------------------------------------------------- */
+
+.line_icon{
+    width: 80%;
+    margin: auto;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+/* --------------------------------------------------------------------- */
+
+.div_mang{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    text-align: center;
+
+}
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+.card_p{
+    justify-content: center;
+    text-align: center;
+}
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+.bigcards_p{
+    height: auto;
+    width: 100%;
+     display:flex;
+     justify-content:space-between ;
+     background-color: rgb(249, 249, 249);
+
+}
+.bigcards_p img{
+    padding: 1%;
+    width: 120%;
+}
+.bigcards_c {
+    margin-top: 5%;
+    margin-right:  10%;
+    width: 100%;
+}
+.bigcards_c button{
+background-color: rgb(21, 183, 6);
+border: none;
+border-radius: 5%;
+color: black;
+width: 130px;
+height: 45px;
+transition: 1s;
+}
+.bigcards_c button:hover{
+    background-color: #fff;
+    color: rgb(3, 2, 2);
+    border-bottom: 0.5px solid rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+.loading{
+    display: flex;
+    justify-content: center;
+}
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+.btn_4{
+    background-color: rgb(21, 183, 6);
+    border: none;
+    border-radius: 5%;
+    color: black;
+    width: 130px;
+    height: 45px;
+    transition: 1s;
+    }
+    .btn_4:hover{
+        background-color: #fff;
+        color: rgb(3, 2, 2);
+        border-bottom: 0.5px solid rgb(0, 0, 0);
+        letter-spacing: 1px;
+    }
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+    .parent_card{
+ justify-content: center;
+ text-align: center;
+    }
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+.card_5_parent{
+    width: 70%;
+    margin: auto;
+}
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+} 
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+
+
+.btncard_footer{
+
+    background-color: rgb(21, 183, 6);
+    border: none;
+    border-radius: 5%;
+    color: black;
+    width: 130px;
+    height: 45px;
+
+    transition: 1s;
+    }
+    .btncard_footer:hover{
+        background-color: #fff;
+        color: rgb(3, 2, 2);
+        border-bottom: 0.5px solid rgb(0, 0, 0);
+        letter-spacing: 1px;
+    }
+
+

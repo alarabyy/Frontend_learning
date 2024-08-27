@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 110vh;
+    background-color: rgb(15, 157, 245);
+    display: flex;
+    flex-direction: column; /* لتكديس العنوان فوق اللعبة */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.game-title {
+    margin-bottom: 150px; /* مسافة بين اللعبة والكارتات */
+    font-size: 2rem;
+    color: white;
+}
+
+.container {
+    margin-top:300px; /* مسافة بين اللعبة والكارتات */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    border: 2px solid #120f0f;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    padding-top: 65%; /* Aspect ratio 1:1 */
+    background: rgb(14, 159, 255);
+    border: 1px solid #120f0f;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px black;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: #fff;
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 15px;
+    }
+
+    .card {
+        padding-top: 120%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    .card {
+        padding-top: 100%;
+    }
+}

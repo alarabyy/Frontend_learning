@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; 
+            color: #f4f4f4;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #f4f4f4; }
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #f4f4f4;
+            margin-bottom: 20px;
+            border-right: 0.15em solid #f4f4f4;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
+            text-align: center;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #333;
+            color: #f4f4f4;
+            width: 100%;
+        }
+
+        @media (max-width: 1024px) {
+            .cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .card {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .cards {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 15px;
+            }
+
+            .card {
+                padding: 10px;
+            }
+
+            .card img {
+                max-width: 80%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>Welcome to Market</h1>
+        <hr>
+    </nav>
+
+    <main>
+        <div id="cards" class="cards">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Store</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var cardsContainer = document.getElementById("cards");
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://fakestoreapi.com/products", true);
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var products = JSON.parse(xhr.responseText);
+                    products.forEach(function(product) {
+                        var card = document.createElement("div");
+                        card.classList.add("card");
+                        card.innerHTML = `
+                            <img src="${product.image}" alt="${product.title}" style="max-width: 100%; border-radius: 10px;">
+                            <h2>${product.title}</h2>
+                            <p>${product.description.substring(0, 100)}</p>
+                            <p><strong>Price: $${product.price}</strong></p>
+                        `;
+                        cardsContainer.appendChild(card);
+                    });
+                } else if (xhr.readyState == 4) {
+                    console.error('Error fetching product data:', xhr.statusText);
+                }
+            };
+
+            xhr.send();
+        });
+    </script>
+</body>
+</html>

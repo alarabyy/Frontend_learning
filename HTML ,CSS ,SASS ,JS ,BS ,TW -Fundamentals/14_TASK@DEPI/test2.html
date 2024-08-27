@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Products</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+            border-right: 0.15em solid #333; /* مؤشر الكتابة */
+            white-space: nowrap; /* منع التفاف النص */
+            overflow: hidden; /* إخفاء النص الزائد */
+            animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #333; }
+        }
+
+        .products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* تصميم شبكي مرن */
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .product {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s;
+            text-align: center;
+        }
+
+        .product:hover {
+            transform: scale(1.05); /* تأثير عند التحويم */
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+
+        .product img:hover {
+            transform: scale(1.1); /* تأثير تكبير الصورة عند التحويم */
+        }
+
+        .product h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .product .price {
+            font-size: 1.2rem;
+            color: #e91e63;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .products-container {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 15px;
+            }
+
+            .product {
+                padding: 10px;
+            }
+
+            .product img {
+                max-width: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .products-container {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 10px;
+            }
+
+            .product {
+                padding: 8px;
+            }
+
+            .product img {
+                max-width: 100px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome in my market</h1>
+    </header>
+    <main>
+        <div class="products-container" id="products-container">
+            <!-- سيتم هنا عرض البيانات من API -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Store Products</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const productsContainer = document.getElementById('products-container');
+        
+            // Create a new XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+        
+            // Configure it: GET-request for the URL /products
+            xhr.open('GET', 'https://fakestoreapi.com/products', true);
+        
+            // Set up the callback function to handle the response
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // Parse the JSON response
+                    var data = JSON.parse(xhr.responseText);
+                    
+                    // Iterate over each product in the response data
+                    data.forEach(product => {
+                        // Create a div for each product
+                        const productDiv = document.createElement('div');
+                        productDiv.classList.add('product');
+        
+                        // Add product image, title, price, and description
+                        productDiv.innerHTML = `
+                            <img src="${product.image}" alt="${product.title}">
+                            <h2>${product.title}</h2>
+                            <p>${product.description.substring(0, 100)}...</p>
+                            <p class="price">$${product.price}</p>
+                        `;
+        
+                        // Append product to the container
+                        productsContainer.appendChild(productDiv);
+                    });
+                } else if (xhr.readyState === 4) {
+                    // Handle error
+                    console.error('Error fetching data:', xhr.statusText);
+                }
+            };
+        
+            // Send the request
+            xhr.send();
+        });
+    </script>
+</body>
+</html>

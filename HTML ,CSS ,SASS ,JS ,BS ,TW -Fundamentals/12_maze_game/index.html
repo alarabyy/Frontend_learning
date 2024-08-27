@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        
+        h1 {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        
+        canvas {
+            border: 2px solid #000;
+            background-color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Maze Game</h1>
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+
+
+
+    <script>
+
+
+        // إعدادات المتاهة
+const mazeSize = 10; // حجم المتاهة
+const cellSize = 60; // حجم كل خلية
+const playerSize = 20; // حجم اللاعب
+const playerSpeed = 5; // سرعة حركة اللاعب
+
+// الحصول على عنصر الـ Canvas وسياق الرسم
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+
+// إعدادات اللاعب
+let player = {
+    x: cellSize + (cellSize - playerSize) / 2,
+    y: cellSize + (cellSize - playerSize) / 2,
+    width: playerSize,
+    height: playerSize,
+    color: 'blue'
+};
+
+// رسم المتاهة كصفوف وأعمدة
+const maze = [
+    [1, 1, 1, 1, 1, 0, 1, 1, 1, 1],
+    [1, 0, 0, 1, 0, 0, 0, 0, 0, 1],
+    [1, 0, 0, 1, 0, 0, 1, 1, 0, 1],
+    [1, 0, 0, 0, 0, 1, 0, 1, 0, 1],
+    [1, 0, 1, 1, 0, 0, 0, 1, 0, 1],
+    [1, 0, 0, 1, 0, 1, 0, 0, 0, 1],
+    [1, 1, 0, 0, 0, 1, 0, 1, 0, 1],
+    [1, 0, 0, 1, 0, 0, 0, 1, 0, 1],
+    [1, 0, 0, 0, 0, 1, 0, 0, 0, 1],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+];
+
+// رسم المتاهة
+function drawMaze() {
+    for (let row = 0; row < mazeSize; row++) {
+        for (let col = 0; col < mazeSize; col++) {
+            if (maze[row][col] === 1) {
+                ctx.fillStyle = 'black';
+                ctx.fillRect(col * cellSize, row * cellSize, cellSize, cellSize);
+            } else {
+                ctx.clearRect(col * cellSize, row * cellSize, cellSize, cellSize);
+            }
+        }
+    }
+}
+
+// رسم اللاعب
+function drawPlayer() {
+    ctx.fillStyle = player.color;
+    ctx.fillRect(player.x, player.y, player.width, player.height);
+}
+
+// تحديث موقع اللاعب
+function updatePlayerPosition(direction) {
+    switch (direction) {
+        case 'ArrowUp':
+            if (!collision(player.x, player.y - playerSpeed)) player.y -= playerSpeed;
+            break;
+        case 'ArrowDown':
+            if (!collision(player.x, player.y + playerSpeed)) player.y += playerSpeed;
+            break;
+        case 'ArrowLeft':
+            if (!collision(player.x - playerSpeed, player.y)) player.x -= playerSpeed;
+            break;
+        case 'ArrowRight':
+            if (!collision(player.x + playerSpeed, player.y)) player.x += playerSpeed;
+            break;
+    }
+}
+
+// الكشف عن الاصطدام
+function collision(newX, newY) {
+    const mazeX = Math.floor(newX / cellSize);
+    const mazeY = Math.floor(newY / cellSize);
+    if (maze[mazeY][mazeX] === 1 || maze[mazeY][Math.floor((newX + playerSize) / cellSize)] === 1 || 
+        maze[Math.floor((newY + playerSize) / cellSize)][mazeX] === 1 || 
+        maze[Math.floor((newY + playerSize) / cellSize)][Math.floor((newX + playerSize) / cellSize)] === 1) {
+        return true;
+    }
+    return false;
+}
+
+// رسم كل شيء في اللعبة
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height); // مسح اللوحة
+    drawMaze();
+    drawPlayer();
+}
+
+// التعامل مع ضغطات لوحة المفاتيح
+window.addEventListener('keydown', (e) => {
+    updatePlayerPosition(e.key);
+    draw();
+});
+
+// بدء الرسم لأول مرة
+draw();
+
+    </script>
+</body>
+</html>

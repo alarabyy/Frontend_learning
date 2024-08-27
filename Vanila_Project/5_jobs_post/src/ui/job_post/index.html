@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Listing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- start job post container  -->
+
+    <div class="job-listing">
+      <div class="job-header">
+        <div class="job-header-data">
+          <h2>Recruitment Specialist - Italian speaker</h2>
+          <p class="company">
+            Teleperformance - Egypt
+            <span class="location">- New Cairo, Cairo</span>
+          </p>
+          <p class="posted">Posted 7 hours ago</p>
+          <p class="applicants-num">1 Applicant</p>
+          <div class="buttons">
+            <button class="apply-btn" onclick="openModal()">
+              Apply For Job
+            </button>
+            <button class="details-btn" onclick="toggleDetails()">
+              Show Details
+            </button>
+          </div>
+        </div>
+        <div class="job-header-img"></div>
+      </div>
+
+      <!-- start job description   -->
+
+      <div class="job-details" id="job-details">
+        <div class="job-info">
+          <div>
+            <h3>Salary</h3>
+            <p>Confidential</p>
+          </div>
+          <div>
+            <h3>Industry</h3>
+            <p>Human Resources</p>
+          </div>
+          <div>
+            <h3>Job Description</h3>
+            <p class="description">
+              • Reviews and assesses towards requirements available candidates’
+              CVs<br />
+              • Conducts pre-screening calls assessing candidates<br />
+              • Conducts first interview with the accepted pre-screening
+              candidates <br />
+              • Provides accurate and detailed information regarding the hiring
+              and relocation process <br />
+              • Cooperates with sourcing and onboarding teams to facilitate the
+              recruitment process <br />
+              • Coordinates the Interdepartmental Movements and Rehiring demands
+              <br />
+            </p>
+          </div>
+          <div class="skills">
+            <h3>Skills Required</h3>
+            <ul>
+              <li>Business Administration</li>
+              <li>Administration</li>
+              <li>Human Resources (HR)</li>
+              <li>Recruitment</li>
+              <li>Screening</li>
+              <li>Sourcing</li>
+              <li>Hiring</li>
+              <li>Italian</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- start interaction-section -->
+
+      <div class="interaction-section">
+        <div class="interaction-header">
+          <div class="likes-count">
+            <span>👍 47 Likes</span>
+          </div>
+          <div class="comments-count">
+            <span>4 comments</span>
+          </div>
+        </div>
+        <div class="interaction-buttons">
+          <span>Like</span>
+          <span onclick="toggleComments()">Comments</span>
+        </div>
+
+        <!-- strat toggleable comments section -->
+
+        <div id="comments-container" style="display: none">
+          <div class="add-comment">
+            <img
+              src="https://placehold.co/40x40?text=img"
+              alt="User Avatar"
+              class="user-avatar"
+            />
+            <input
+              type="text"
+              placeholder="Add a comment..."
+              class="comment-input"
+            />
+          </div>
+          <div class="comments-section">
+
+            <!-- placeholder comment -->
+
+            <div class="comment">
+              <img
+                src="https://placehold.co/40x40?text=img"
+                alt="User Avatar"
+                class="comment-avatar"
+              />
+              <div class="comment-data">
+                <div class="comment-actions">
+                  <button class="actions-btn" onclick="showCommentActions()">
+                    ...
+                  </button>
+                  <div class="actions-menu">
+                    <p>Edit</p>
+                    <p>Delete</p>
+                  </div>
+                </div>
+                <p class="comment-user-name">Ahmed Samir Fayed</p>
+                <p class="comment-user-title">Hardware Engineer</p>
+                <p class="comment-time">2d</p>
+                <p class="comment-body">
+                  This point is understated: "Use Database Indexing and search
+                  engines for efficient data retrievals." 80% of the performance
+                  optimization can be done at this level!
+                </p>
+              </div>
+            </div>
+            <div class="replies">
+
+              <!-- placeholder reply -->
+
+              <div class="reply">
+                <div class="comment">
+                  <img
+                    src="https://placehold.co/40x40?text=img"
+                    alt="User Avatar"
+                    class="comment-avatar"
+                  />
+                  <div class="comment-data">
+                    <div class="comment-actions">
+                      <button
+                        class="actions-btn"
+                        onclick="showCommentActions()"
+                      >
+                        ...
+                      </button>
+                      <div class="actions-menu">
+                        <p>Edit</p>
+                        <p>Delete</p>
+                      </div>
+                    </div>
+                    <p class="comment-user-name">Emad Ramadan Elzorqany</p>
+                    <p class="comment-user-title">Embedded Hardware Engineer</p>
+                    <p class="comment-time">1d</p>
+                    <p class="comment-body">
+                      spot on! thanks for adding your insights.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- add more comments and replies as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- upload resume popup -->
+
+    <div id="applyModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Upload Resume</h2>
+        <form id="applyForm">
+          <input type="file" id="resume" name="resume" required />
+          <button type="submit">Submit Application</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

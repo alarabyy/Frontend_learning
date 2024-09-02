@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Offline Status</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+    }
+    
+    .title {
+        color: crimson; /* Default color when status is unknown */
+        font-size: 3em;
+        text-align: center;
+    }
+    
+  </style>
+</head>
+<body>
+  <div>
+    <main>
+      <h1 class="title">Checking Status...</h1> <!-- This will show "Online" or "Offline" -->
+    </main>
+  </div>
+
+  <script>
+    const title = document.querySelector(".title");
+
+    // Function to run when online
+    function online() {
+      title.innerHTML = "Online Now";
+      title.style.color = "green";
+      document.body.style.backgroundColor = "lightgreen"; // Changes background to indicate online status
+    }
+    
+    // Function to run when offline
+    function offline() {
+      title.innerHTML = "Offline Now";
+      title.style.color = "red";
+      document.body.style.backgroundColor = "lightcoral"; // Changes background to indicate offline status
+    }
+    
+    // Initial check on page load
+    window.onload = function() {
+      if (navigator.onLine) {
+        online();
+      } else {
+        offline();
+      }
+    };
+    
+    // Event listeners for online and offline events
+    window.addEventListener('online', online);
+    window.addEventListener('offline', offline);
+    
+  </script>
+</body>
+</html>

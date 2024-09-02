@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.title{
+    color:crimson;
+    font-size: 3em;
+}
+li {
+    left: 100px;
+    margin: 10px;
+}
+.reload{
+    cursor:pointer;
+    outline: none;
+    border: none;
+    font-size:xx-large;
+    width: 120px;
+    border-radius: 20px;
+    background-color: crimson;
+    color: aliceblue;
+
+}
+.reload:hover{
+    background-color: brown;
+}
+
+.hide{
+    display: none;
+}

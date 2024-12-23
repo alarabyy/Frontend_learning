@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فتح الكاميرا تلقائيًا</title>
+  <style>
+    /* تحسين تنسيق الصفحة بشكل عام */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fafafa;
+      color: #333;
+    }
+
+    .modal {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* الفيديو الذي يعرض الكاميرا مع فلتر لتحسين مظهر الوجه */
+    #videoElement {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      filter: brightness(1.2) contrast(1.1); /* إضافة تأثير النضارة */
+    }
+
+    /* أزرار التحكم */
+    button {
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* زر التقاط الصورة */
+    #captureButton {
+      background-color: #007bff;
+      color: white;
+    }
+
+    #captureButton:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    /* الأزرار الخاصة بتطبيق الفلاتر */
+    #filterButton, #filterButton1, #filterButton2 {
+      background-color: #28a745;
+      color: white;
+    }
+
+    #filterButton:hover, #filterButton1:hover, #filterButton2:hover {
+      background-color: #218838;
+      transform: scale(1.05);
+    }
+
+    /* زر تحميل الصورة */
+    #downloadButton {
+      background-color: #ffc107;
+      color: white;
+    }
+
+    #downloadButton:hover {
+      background-color: #e0a800;
+      transform: scale(1.05);
+    }
+
+    /* إخفاء الكانفس (لإخفاء الصورة الملتقطة) */
+    #canvas {
+      display: none;
+    }
+
+    /* عرض الصور في المعرض */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* تحسين التنسيق للأجهزة المحمولة */
+    @media (max-width: 600px) {
+      .modal-content {
+        width: 90%;
+        padding: 15px;
+      }
+
+      button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <video id="videoElement" autoplay></video>
+      <button id="captureButton">التقاط الصورة</button>
+      <button id="filterButton">تطبيق الفلتر الأساسي</button>
+      <button id="filterButton1">الفلتر الأسود والأبيض</button>
+      <button id="filterButton2">فلتر اللون الدافئ</button>
+      <button id="downloadButton">تحميل الصورة بالتأثير</button>
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+
+  <script>
+    const modal = document.getElementById('myModal');
+    const video = document.getElementById('videoElement');
+    const canvas = document.getElementById('canvas');
+    const captureButton = document.getElementById('captureButton');
+    const filterButton = document.getElementById('filterButton');
+    const filterButton1 = document.getElementById('filterButton1');
+    const filterButton2 = document.getElementById('filterButton2');
+    const downloadButton = document.getElementById('downloadButton');
+    const gallery = document.getElementById('gallery');
+
+    let currentFilter = ''; // لتخزين الفلتر الحالي
+
+    // تشغيل الكاميرا تلقائيًا عند فتح الصفحة
+    window.onload = function () {
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(stream => {
+          video.srcObject = stream;
+        })
+        .catch(error => {
+          console.error('Error accessing media devices.', error);
+        });
+    };
+
+    // التقاط الصورة عند الضغط على الزر
+    captureButton.onclick = function () {
+      const context = canvas.getContext('2d');
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+
+      // تطبيق الفلتر الحالي على الكانفس قبل التقاط الصورة
+      canvas.style.filter = currentFilter; // تطبيق الفلتر على الكانفس
+
+      context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+      // حفظ الصورة بتنسيق JPG
+      const image = canvas.toDataURL('image/jpeg');
+      const link = document.createElement('a');
+      link.href = image;
+      link.download = 'captured_image.jpg';
+      link.click();
+    };
+
+    // تطبيق فلتر أساسي (زيادة السطوع والتباين) عند التمرير بالماوس
+    filterButton.onmouseover = function () {
+      currentFilter = 'brightness(1.5) contrast(1.3)';
+      video.style.filter = currentFilter;
+    };
+
+    // تطبيق فلتر الأسود والأبيض عند التمرير بالماوس
+    filterButton1.onmouseover = function () {
+      currentFilter = 'grayscale(100%)';
+      video.style.filter = currentFilter;
+    };
+
+    // تطبيق فلتر اللون الدافئ عند التمرير بالماوس
+    filterButton2.onmouseover = function () {
+      currentFilter = 'sepia(1)';
+      video.style.filter = currentFilter;
+    };
+
+    // تحميل الصورة مع التأثيرات عند الضغط على الزر
+    downloadButton.onclick = function () {
+      const context = canvas.getContext('2d');
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+
+      // تطبيق الفلتر الأسود والأبيض على الكانفس
+      currentFilter = 'grayscale(100%)';  // التأكد من تطبيق الفلتر الأبيض والأسود عند الضغط على الزر
+      canvas.style.filter = currentFilter; // تطبيق الفلتر على الكانفس
+
+      context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+      // حفظ الصورة بتنسيق JPG مع التأثيرات
+      const image = canvas.toDataURL('image/jpeg');
+      const link = document.createElement('a');
+      link.href = image;
+      link.download = 'captured_image_with_bw_filter.jpg';  // اسم الصورة مع الفلتر الأسود والأبيض
+      link.click();
+
+      // إضافة الصورة إلى المعرض بعد تحميلها
+      const img = document.createElement('img');
+      img.src = image;
+      gallery.appendChild(img);
+    };
+  </script>
+</body>
+
+</html>

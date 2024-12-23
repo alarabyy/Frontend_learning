@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .btn {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .btn img {
+    width: 50px;
+  }
+  
+  .btn span {
+    font-size: 18px;
+  }
+  /* ... باقي الكود ... */
+
+@media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+    .logo img {
+      width: 50%; /* تقليل حجم الصورة على الشاشات الصغيرة */
+    }
+    .btn {
+      width: 100%;
+      flex-directiِon: column; /* ترتيب الأزرار عموديًا */
+    }
+  }
